@@ -28,3 +28,14 @@
   background-color: #84cc16 !important;
   color: #ffffff !important;
 }
+/* Global Dark Canvas Reset - Removes Stubborn White Footers */
+html, body, .site, footer, .footer, footer div, .bg-white, main, #main, .container-fluid {
+  background-color: #0f172a !important; /* Deep Slate Dark */
+  background: #0f172a !important;
+  color: #cbd5e1 !important;
+}
+
+/* Ensure text stays visible on dark backgrounds */
+footer p, footer span, footer a, .text-muted, [class*="text-muted"] {
+  color: #64748b !important;
+}
