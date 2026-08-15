@@ -1,11 +1,14 @@
-<header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+<header class="navbar navbar-expand navbar-dark bg-dark bg-gradient" style="background-color: #0f172a !important; border-color: #1e293b !important;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">{{ site.data.bio.basics.name }}</a>
+    <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}" style="font-weight: 700; color: #ffffff !important;">
+      <!-- Optional: You can prepend a small icon or branding text token here -->
+      {{ site.data.bio.basics.name }}
+    </a>
     <div class="ms-auto">
       <ul class="navbar-nav mb-2 mb-lg-0">
-        <a class="nav-link" href="{{ '/#projects' | prepend: site.baseurl }}">Projects</a>
-        <a class="nav-link" href="{{ '/#essays' | prepend: site.baseurl }}">Essays</a>
-        <a class="nav-link" href="{{ '/resume.html' | prepend: site.baseurl }}">Resume</a>
+        <a class="nav-link" href="{{ '/#projects' | prepend: site.baseurl }}" style="color: #cbd5e1 !important; margin: 0 5px;">Projects</a>
+        <a class="nav-link" href="{{ '/#essays' | prepend: site.baseurl }}" style="color: #cbd5e1 !important; margin: 0 5px;">Essays</a>
+        <a class="nav-link" href="{{ '/resume.html' | prepend: site.baseurl }}" style="color: #cbd5e1 !important; margin: 0 5px;">Resume</a>
       </ul>
     </div>
   </div>
