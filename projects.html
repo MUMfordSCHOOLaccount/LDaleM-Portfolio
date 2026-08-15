@@ -1,0 +1,27 @@
+---
+layout: default
+title: Project Showcases
+---
+
+<div class="container" style="padding: 4rem 0;">
+    <h1 class="text-center mb-5" style="font-weight: 800; color: #ffffff;">Development Showcase Grid</h1>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for project in site.projects %}
+        <div class="col">
+            <div class="card h-100 shadow-sm" style="background-color: #1e293b; border: 1px solid #334155; border-radius: 12px;">
+                <div class="card-body d-flex flex-column" style="padding: 1.75rem;">
+                    <h3 class="card-title" style="color: #ffffff; font-weight: 700; margin-bottom: 0.75rem;">{{ project.title }}</h3>
+                    <p class="card-text" style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; flex-grow: 1;">{{ project.description }}</p>
+
+                    {% if project.url %}
+                    <a href="{{ project.url }}" target="_blank" class="btn btn-outline-success mt-4 w-100" style="border-color: #84cc16; color: #84cc16; font-weight: 600; border-radius: 8px;">
+                        View Project Source <i class="fa fa-external-link ms-1"></i>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
