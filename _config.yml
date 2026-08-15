@@ -37,3 +37,8 @@ include:
 
 plugins:
   - jekyll-gist
+# Collections tracking parameters
+collections:
+  projects:
+    output: true
+
