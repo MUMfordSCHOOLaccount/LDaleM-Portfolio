@@ -4,39 +4,54 @@ title: L. Dale Mumford | Portfolio
 ---
 
 <style>
-  /* Core Dark Mode Workspace */
-  html, body, .site, main, .container {
+  /* Core Dark Mode Workspace Overrides */
+  html, body, .site, main, .container, .bg-light, .jumbotron {
     background-color: #0f172a !important; /* Deep Slate Dark */
     color: #f1f5f9 !important; /* Off-White Text */
   }
 
-  /* Custom Profile Branding Element */
+  /* Force Profile Card Layout into Dark Slate Blue */
+  .card, .card-body, .well, .thumbnail {
+    background-color: #1e293b !important; /* Slate Blue Card */
+    border: 1px solid #334155 !important;
+    color: #f1f5f9 !important;
+  }
+
+  /* Custom Profile Branding Logo Element */
   .profile-logo {
     display: block;
-    margin: 2rem auto 1rem auto;
+    margin: 2rem auto 2rem auto;
     max-width: 180px;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   }
 
   /* Structural Typography Polish */
-  h1, h2, h3, h4, .display-4, .navbar-brand {
+  h1, h2, h3, h4, h5, h6, .display-4, .navbar-brand, .card-title {
     color: #ffffff !important;
     font-weight: 700 !important;
   }
   
-  p, li, span, div, .text-muted {
+  p, li, span, div, .text-muted, .card-text {
     color: #cbd5e1 !important;
   }
 
-  /* Fix Giant Social Icon Template Bug */
-  .fa, .svg-inline--fa, svg {
+  /* Fix Giant Social Icon Template Bug & Apply Contrast */
+  .fa, .svg-inline--fa, svg, .social-icon {
     max-width: 32px !important;
     max-height: 32px !important;
     display: inline-block !important;
     margin: 10px !important;
     vertical-align: middle !important;
+    fill: #ffffff !important;
+    color: #ffffff !important;
+  }
+  
+  /* Format Site Footer */
+  footer, .footer, .text-end {
+    background-color: #0f172a !important;
+    color: #64748b !important;
   }
   
   hr {
