@@ -1,8 +1,11 @@
-<h<header class="navbar navbar-expand navbar-dark bg-dark bg-gradient" style="background-color: #0f172a !important; border-color: #1e293b !important;"> 
+<header class="navbar navbar-expand navbar-dark bg-dark bg-gradient" style="background-color: #0f172a !important; border-color: #1e293b !important;"> 
   <div class="container-fluid"> 
-    <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}" style="font-weight: 700; color: #ffffff !important;"> 
-      {{ site.data.bio.basics.name }} 
-    </a> 
+    <div>
+      <a class="navbar-brand d-block mb-0" href="{{ '/' | prepend: site.baseurl }}" style="font-weight: 700; color: #ffffff !important;"> 
+        {{ site.data.bio.basics.name }} 
+      </a>
+      <a href="https://www.linkedin.com/in/dale-mumford-593821400" style="color: #cbd5e1 !important; font-size: 0.875rem;">My linkedIn Profile</a>
+    </div>
     <div class="ms-auto"> 
       <ul class="navbar-nav mb-2 mb-lg-0"> 
         <a class="nav-link" href="{{ '/projects.html' | prepend: site.baseurl }}" style="color: #cbd5e1 !important; margin: 0 5px;">Projects</a> 
